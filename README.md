@@ -7,3 +7,13 @@ More precisely: it reformats HTML when text and other super-positioned text (`<s
 **Usage**
 
 `./chordexport.sh <url>`
+
+for example:
+
+`./chordexport.sh https://chords-and-tabs.net/song/name/nancy-sinatra-something-stupid-2`
+
+**Requirements**
+
+  * bash
+  * libxml2-utils
+  * a terminal application capable of ANSI sequences (such as putty)
