@@ -37,4 +37,6 @@ while true; do
         done < /tmp/words
         echo
     done < /tmp/verse
+    # add extra space after each verse
+    echo
 done
