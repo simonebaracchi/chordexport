@@ -12,10 +12,12 @@ while true; do
     divcount=$(( divcount + 1 ))
         
     # extract a verse (a group of lines)
-    xmllint --xpath "//div[1]/div[$divcount]" --html /tmp/parsed | sed 's/<div class="song">//;s/<\/div>//' > /tmp/verse 2>/dev/null
+    xmllint --xpath "//div[1]/div[$divcount]" --html /tmp/parsed 2>/dev/null | sed 's/<div class="song">//;s/<\/div>//' > /tmp/verse
     if [ ! -s /tmp/verse ]; then
         exit
     fi
+    # add a newline otherwise looping screws up
+    echo >> /tmp/verse
     # cycle through single lines
     while read line; do
         #separate all chords on newlines for easier parsing
