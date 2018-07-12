@@ -12,6 +12,15 @@ for example:
 
 `./chordexport.sh https://chords-and-tabs.net/song/name/nancy-sinatra-something-stupid-2`
 
+Example output:
+
+```
+G                  Em7           G7                  G
+I know I stand in line until you think you have the time
+            Am           D7    Am7   D7
+To spend an evening with me
+```
+
 **Requirements**
 
   * bash
