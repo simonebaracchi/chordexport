@@ -6,11 +6,11 @@ More precisely: it reformats HTML when text and other super-positioned text (`<s
 
 **Usage**
 
-`./chordexport.sh <url>`
+`./export.sh <url>`
 
 for example:
 
-`./chordexport.sh https://chords-and-tabs.net/song/name/nancy-sinatra-something-stupid-2`
+`./export.sh https://chords-and-tabs.net/song/name/nancy-sinatra-something-stupid-2`
 
 Example output:
 
